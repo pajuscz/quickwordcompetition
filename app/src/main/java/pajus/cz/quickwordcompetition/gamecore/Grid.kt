@@ -1,10 +1,17 @@
 package pajus.cz.quickwordcompetition.gamecore
 
-class Grid(val width: Int,
-           val height: Int){
+open class Grid(val height: Int,
+                val width: Int){
 
     var grid: Array<CharArray> = Array(height) { CharArray(width) }
 
+//    init {
+//        for (y in 0 until height){
+//            for (x in 0 until width){
+//                grid[y][x] = 'x'
+//            }
+//        }
+//    }
 
     private fun string(): String {
         return grid.contentDeepToString()
@@ -16,6 +23,7 @@ class Grid(val width: Int,
 
     override fun toString(): String {
         return "Grid [w:$width x h:$height]\n" +
-               "${string()}"
+                string()
     }
+
 }
