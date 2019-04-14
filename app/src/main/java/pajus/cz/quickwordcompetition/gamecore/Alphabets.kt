@@ -2,6 +2,7 @@ package pajus.cz.quickwordcompetition.gamecore
 
 class Alphabets{
     companion object {
-        val Czech = Alphabet("abcčdďeěfghijklmnňopqrřsštťuvwxyzž", listOf())
+        val CZECH_WITHOUT_LONGS = Alphabet("ABCČDĎEĚFGHChIJKLMNŇOPQRŘSŠTŤUVWXYZŽ")
+        val CZECH = Alphabet("AÁBCČDĎEÉĚFGHChIÍJKLMNŇOÓPQRŘSŠTŤUÚŮVWXYÝZŽ")
     }
 }

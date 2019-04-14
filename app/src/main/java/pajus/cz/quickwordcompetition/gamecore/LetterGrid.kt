@@ -13,7 +13,7 @@ class LetterGrid(height: Int,
     private fun generate(){
         for (row in 0 until height){
             for (column in 0 until width){
-                grid[row][column] = this.alphabet[generator.next(alphabet.size())]
+               // grid[row][column] = this.alphabet[generator.next(alphabet.size())]
             }
         }
     }
